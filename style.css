@@ -26,11 +26,13 @@ body {
 
 /* SHOP NOW IMAGE BUTTON */
 
+/* SHOP NOW IMAGE BUTTON */
+
 .image-button {
   position: absolute;
-  bottom: 18%; /* adjust if needed */
   left: 50%;
   transform: translateX(-50%);
+  bottom: 18%;
 }
 
 .image-button img {
@@ -42,6 +44,7 @@ body {
 .image-button img:hover {
   transform: scale(1.06);
 }
+
 
 /* STORE INFO SECTION */
 
@@ -67,3 +70,15 @@ body {
   font-size: 15px;
   margin: 6px 0;
 }
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  .image-button {
+    bottom: 22%; /* higher on phones */
+  }
+
+  .image-button img {
+    width: 260px; /* smaller for phone */
+  }
+}
+
