@@ -22,9 +22,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
-
-/* SHOP NOW IMAGE BUTTON */
 
 /* SHOP NOW IMAGE BUTTON */
 
@@ -81,4 +80,17 @@ body {
     width: 260px; /* smaller for phone */
   }
 }
+/* MOBILE HERO FIX */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100svh; /* better mobile viewport handling */
+  }
+
+  .hero-bg {
+    object-position: top center; /* shows more top of image on phones */
+  }
+}
+
+
 
